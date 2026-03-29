@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import PropTypes from "prop-types";
 import { items } from "./Data";
 import Product from "./Product";
 import { ToastContainer, toast } from "react-toastify";
@@ -88,6 +89,11 @@ const ProductDetail = ({ cart, setCart }) => {
       <Product cart={cart} setCart={setCart} items={relatedProducts} />
     </>
   );
+};
+
+ProductDetail.propTypes = {
+  cart: PropTypes.array.isRequired,
+  setCart: PropTypes.func.isRequired,
 };
 
 export default ProductDetail;
