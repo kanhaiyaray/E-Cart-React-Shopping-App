@@ -29,7 +29,7 @@ A simple e-commerce web app built with React, Bootstrap, and React Router. Brows
 ## Getting Started
 
 ```bash
-git clone <your-repo-url>
+git clone <https://github.com/kanhaiyaray/E-Cart-React-Shopping-App.git>
 cd e-cart
 npm install
 npm run dev
